@@ -1,0 +1,4 @@
+Running: xsim.dir/axi_stream_insert_header_tb_behav/xsimk.exe -simmode gui -wdb axi_stream_insert_header_tb_behav.wdb -simrunnum 0 -socket 53914
+Design successfully loaded
+Design Loading Memory Usage: 8440 KB (Peak: 8440 KB)
+Design Loading CPU Usage: 0 ms

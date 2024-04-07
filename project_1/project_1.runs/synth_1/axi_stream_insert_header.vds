@@ -1,0 +1,230 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Apr  6 23:46:46 2024
+# Process ID: 87256
+# Current directory: D:/Vivado_Proj/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log axi_stream_insert_header.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_stream_insert_header.tcl
+# Log file: D:/Vivado_Proj/project_1/project_1.runs/synth_1/axi_stream_insert_header.vds
+# Journal file: D:/Vivado_Proj/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: Rey, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33960 MB
+#-----------------------------------------------------------
+source axi_stream_insert_header.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado_Proj/project_1/project_1.srcs/utils_1/imports/synth_1/axi_stream_insert_header.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado_Proj/project_1/project_1.srcs/utils_1/imports/synth_1/axi_stream_insert_header.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top axi_stream_insert_header -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 88388
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 934.473 ; gain = 439.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_insert_header' [D:/Vivado_Proj/project_1/project_1.srcs/sources_1/new/RTL.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_insert_header' (0#1) [D:/Vivado_Proj/project_1/project_1.srcs/sources_1/new/RTL.v:21]
+WARNING: [Synth 8-7137] Register data_out_reg in module axi_stream_insert_header has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado_Proj/project_1/project_1.srcs/sources_1/new/RTL.v:82]
+WARNING: [Synth 8-7137] Register keep_out_reg in module axi_stream_insert_header has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado_Proj/project_1/project_1.srcs/sources_1/new/RTL.v:83]
+WARNING: [Synth 8-7137] Register last_out_reg in module axi_stream_insert_header has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado_Proj/project_1/project_1.srcs/sources_1/new/RTL.v:85]
+WARNING: [Synth 8-7129] Port data_insert[31] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[30] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[29] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[28] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[27] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[26] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[25] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[24] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[3] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[2] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[1] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[0] in module axi_stream_insert_header is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1042.801 ; gain = 547.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.801 ; gain = 547.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.801 ; gain = 547.832
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.801 ; gain = 547.832
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port data_insert[31] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[30] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[29] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[28] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[27] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[26] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[25] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_insert[24] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[3] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[2] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[1] in module axi_stream_insert_header is either unconnected or has no load
+WARNING: [Synth 8-7129] Port keep_insert[0] in module axi_stream_insert_header is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.176 ; gain = 730.207
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1226.098 ; gain = 731.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     1|
+|4     |LUT3 |    48|
+|5     |LUT4 |    19|
+|6     |LUT5 |     3|
+|7     |LUT6 |     1|
+|8     |FDCE |    78|
+|9     |FDRE |    37|
+|10    |IBUF |    68|
+|11    |OBUF |    40|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   299|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.320 ; gain = 740.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1239.312 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1333.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2989669e
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1333.492 ; gain = 844.773
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1333.492 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Proj/project_1/project_1.runs/synth_1/axi_stream_insert_header.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_stream_insert_header_utilization_synth.rpt -pb axi_stream_insert_header_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 23:47:03 2024...
